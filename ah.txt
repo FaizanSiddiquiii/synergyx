@@ -1,0 +1,113 @@
+<div class="counter-wrapper">
+      <div class="counter-container">
+        <i class="fas fa-utensils"></i>
+        <span class="num" data-val="400">000</span>
+        <span class="text">Meals Delivered</span>
+      </div>
+      <div class="counter-container">
+        <i class="fas fa-smile-beam"></i>
+        <span class="num" data-val="340">000</span>
+        <span class="text">Happy Customers</span>
+      </div>
+      <div class="counter-container">
+        <i class="fas fa-list"></i>
+        <span class="num" data-val="225">000</span>
+        <span class="text">Menu Items</span>
+      </div>
+      <div class="counter-container">
+        <i class="fas fa-star"></i>
+        <span class="num" data-val="280">000</span>
+        <span class="text">Five Stars</span>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.counter-wrapper {
+  position: absolute;
+  width: 80vw;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+.counter-container {
+  width: 28vmin;
+  height: 28vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1em 0;
+  position: relative;
+  font-size: 16px;
+  border-radius: 0.5em;
+  background-color: #21242b;
+  border-bottom: 10px solid #18f98f;
+}
+.counter-container i {
+  color: #18f98f;
+  font-size: 2.5em;
+  text-align: center;
+}
+.counter-container span.num {
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 3em;
+}
+.counter-container span.text {
+  color: #e0e0e0;
+  font-size: 1em;
+  text-align: center;
+  pad: 0.7em 0;
+  font-weight: 400;
+  line-height: 0;
+}
+@media screen and (max-width: 1024px) {
+  .counter-wrapper {
+    width: 85vw;
+  }
+  .counter-container {
+    height: 26vmin;
+    width: 26vmin;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .counter-wrapper {
+    width: 90vw;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .counter-container {
+    width: calc(50% - 40px);
+    height: 30vmin;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .counter-wrapper {
+    gap: 15px;
+  }
+  .counter-container {
+    width: 100%;
+    height: 25vmin;
+    font-size: 8px;
+  }
+}

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transforming Your Business with Targeted, Customized
+    Solutions</title>
+  <link rel="icon" href="IMAGES/navlogo.png" type="image/icon type">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+</head>
+
+<body>
+  <!-- preloader -->
+  <div id="preloader"> </div>
+
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="index.html"> <img src="IMAGES/navlogo.png" alt="SynergyX"></a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a onclick="closeSide()" href="#">Home</a></li>
+        <li><a onclick="closeSide()" href="#about">About</a></li>
+        <li><a onclick="closeSide()" href="#service">Services</a></li>
+        <li><a onclick="closeSide()" href="#why">Why us</a></li>
+        <li><a onclick="closeSide()" href="#programs">Programs</a></li>
+        <li><a onclick="closeSide()" href="#contact">Contact</i></a></li>
+
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <a href="#" id="toTop" class="disabled">
+        <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+      </a>
+
+
+    </div>
+  </nav>
+
+
+
+  <!-- Hero Section -->
+  <section class="hero_section">
+    <div class="section_container">
+      <div class="hero_container">
+
+        <video autoplay loop muted plays-inline class="backvideo">
+          <source src="IMAGES/bgg.mp4" type="video/mp4">
+        </video>
+
+        <div class="text_section">
+          <h2 id="hero-heading">SynergyX</h2>
+          <h3 id="hero-subheading"> Advanced Solutions, Unified Expertise</h3>
+          <p id="hero-text">
+            Driving Excellence and Success in every aspect of enterprises by providing Quality Solutions.
+          </p>
+          <div class="hero_section_button">
+            <button id="contactNow" class="button">Contact Now</button>
+          </div>
+        </div>
+        <div id="hero-image" class="image_section">
+          <img onclick="changeSlide()" src="IMAGES/g0.png" alt="Synergy X" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="logos">
+      <div class="logos-slide">
+        <img src="IMAGES/SynergyX Academy.svg" />
+        <img src="IMAGES/SynergyX Digital Store.svg" />
+        <img src="IMAGES/SynergyX Services.svg" />
+        <img src="IMAGES/SynergyX SkillBuilder.svg" />
+        
+      </div>
+
+      <div class="logos-slide">
+        <img src="IMAGES/SynergyX Academy.svg" />
+        <img src="IMAGES/SynergyX Digital Store.svg" />
+        <img src="IMAGES/SynergyX Services.svg" />
+        <img src="IMAGES/SynergyX SkillBuilder.svg" />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="about_us" id="about">
+    
+    <div class="section_container">
+      <div class="about_container">
+        <img id="AbstractBg" src="/IMAGES/AbstractBg.png" alt="" srcset="">
+        <div class="text_section">
+          <h2 class="section_title" style="color: #7b00ff;">About Us</h2>
+          <p>
+            At SynergyX, we are dedicated to empowering businesses with advanced Solutions, with expertise in various
+            fields. We deliver trending strategies that drive growth and success. Our Team is committed to excellence,
+            ensuring your vision becomes reality with impactful results.
+          </p>
+        </div>
+        <div class="image_section">
+          <img src="IMAGES/Ecommerce.png" alt="coffee" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- Services Section -->
+  <section class="services" id="service">
+    <div class="wrapper">
+      <h2 class="section_title"><br>Our Services</h2>
+      <p id="serviceP">Transformative solutions that drive growth, enhance
+        engagement, and boost your business success.</p>
+      <div class="content-box">
+        <div class="card">
+          <i class="fa-solid fa-magnifying-glass-chart"></i>
+          <h2>Business Intelligence</h2>
+          <p>Turn data into actionable insights with customized Power BI dashboards for strategic decision-making.</p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-laptop-code"></i>
+          <h2>Website Development</h2>
+          <p>Build a powerful online presence with expertly crafted, user-friendly websites designed for your business.
+          </p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-people-roof"></i>
+          <h2>Social Media Management</h2>
+          <p> Boost your brand’s visibility with strategic social media management and engaging content.</p>
+        </div>
+        <div class="card more">
+          <i class="fa-solid fa-money-bill-trend-up"></i>
+          <h2>Paid Ads Marketing</h2>
+          <p>Maximize your reach with targeted paid ads that drive conversions and boost ROI.</p>
+
+        </div>
+        <div class="card more">
+          <i class="fa-brands fa-shopify"></i>
+          <h2>E-Commerce Store Setup</h2>
+          <p>Streamline your sales with seamless ecommerce store setup and effective management solutions.</p>
+
+        </div>
+        <div class="card more">
+          <i class="fa-solid fa-globe"></i>
+          <h2>Local SEO</h2>
+          <p>Improve local search rankings with expert SEO and efficient Google Business Profile management.</p>
+        </div>
+        <!-- More Services -->
+        <div class="card more">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <h2>Graphic Design</h2>
+          <p>From logos to full-scale marketing materials, we ensure every element communicates your message.</p>  
+        </div>
+        <div class="card more">
+          <i class="fa-brands fa-youtube"></i>
+          <h2>Youtube Optimization</h2>
+          <p>Maximize the reach and impact of your videos by enhancing visibility, keywords, thumbnails, and compelling titles/descriptions.</p>
+        </div>
+        <div class="card more">
+          <i class="fa-solid fa-keyboard"></i>
+          <h2>Copy Writing</h2>
+          <p>High-quality copies for blogs, posts, Emails, etc that drive conversions and strengthen your brand voice.</p>  
+        </div>
+
+        <div id="expandServ"><i onclick="showMoreServ()" class="fa-solid fa-angle-double-up"></i></div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Why Us Section -->
+  <section class="why_us" id="why">
+    <h2 class="section_title">Why Us?</h2>
+    <div class="section_container">
+      <div class="why_container">
+        <div class="why_items">
+          <i class="fa-solid fa-puzzle-piece"></i>
+          <div class="why_us_text">
+            <h3>Customized Solutions</h3>
+            <p>
+              Experience solutions designed specifically for your business challenges. We provide personalized
+              strategies and services that align with your goals and drive meaningful results.
+            </p>
+          </div>
+        </div>
+        <div class="why_items">
+          <i class="fa-solid fa-circle-check"></i>
+          <div class="why_us_text">
+            <h3>Proven Expertise</h3>
+            <p>
+              Benefit from our extensive experience and successful track record in delivering top-quality solutions. Our
+              team’s expertise ensures you receive reliable and effective services tailored to your needs.
+            </p>
+          </div>
+        </div>
+        <div class="why_items">
+          <i class="fa-solid fa-handshake"></i>
+          <div class="why_us_text">
+            <h3>Dedicated Support</h3>
+            <p>
+              Receive exceptional support from our dedicated team, committed to your success. We offer ongoing
+              assistance and guidance to ensure your projects run smoothly and achieve their full potential.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+
+  <!-- programs Section -->
+  <section class="gallery" id="programs">
+    <h2 class="section_title">PROGRAMS</h2>
+    <div class="timeline">
+
+      <div class="programbox left-pgbox">
+        <img src="IMAGES/1.png">
+        <div class="program_text">
+          <h2>SynergyX Academy</h2>
+          <small><a href="https://www.youtube.com/@synergyxacademy" target="_blank"><i class="fa-brands fa-youtube" aria-hidden="true"></i> Youtube</a></small>
+          <p>Get to SynergyX Academy on YouTube for free, comprehensive
+            courses covering PowerBI, SQL, programming languages, and
+            more. Enhance your skills with expert-led tutorials designed for
+            all levels.
+          </p>
+          <span class="left-pgbox-arrow"></span>
+        </div>
+      </div>
+
+      <div class="programbox right-pgbox">
+        <img src="IMAGES/2.png">
+        <div class="program_text">
+          <h2>SynergyX Digital Store</h2>
+          <small><a href="https://www.instagram.com/synxdigitalstore/" target="_blank"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i> Online Store</a></small>
+          <p>Discover top-quality digital products in the SynergyX Digital
+            Store, including tools, templates, and resources. Streamline
+            your workflow and enhance productivity with our curated
+            selection of digital solutions.</p>
+          <span class="right-pgbox-arrow"></span>
+        </div>
+      </div>
+
+      <div class="programbox left-pgbox">
+        <img src="IMAGES/3.png">
+        <div class="program_text">
+          <h2>SynergyX Skill Builder</h2>
+          <small><a href="https://www.linkedin.com/company/synxservices/" target="_blank"><i class="fa-solid fa-trophy" aria-hidden="true"></i> Online programs</a></small>
+          <p>Join our online programs, including internships and
+            competitions, to gain practical experience and showcase your
+            skills. Engage in real-world projects and connect with industry
+            professionals to advance your career.</p>
+          <span class="left-pgbox-arrow"></span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- work done  -->
+  <section id="section_counter">
+    <div class="workcontainer">
+      <div class="counter-grid">
+        <div class="counter-item">
+          <i class="fa-solid fa-business-time"></i>
+          <h1 class="counter" data-target="7">0</h1>
+          <p class="counter-p">Working Days</p>
+        </div>
+        <div class="counter-item">
+          <i class="fa-solid fa-gift"></i>
+          <h1 class="counter" data-target="16">0</h1>
+          <p class="counter-p">Projects Done</p>
+        </div>
+        <div class="counter-item">
+          <i class="fa-solid fa-user-group"></i>
+          <h1 class="counter" data-target="14">0</h1>
+          <p class="counter-p">Happy Clients</p>
+        </div>
+        <div class="counter-item">
+          <i class="fa-solid fa-mug-hot"></i>
+          <h1 class="counter" data-target="999999">0</h1>
+          <p class="counter-p">Caffiene Consumed</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <!-- <h2 class="section_title">Contact Us</h2> -->
+    <div class="contact-container">
+      <span class="big-circle"></span>
+      <img src="img/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text">
+            Wanna learn more about our services <br>or wish to commission work?<br><br> Fill this form and send us a message :)
+            <br><br>
+            Or, if you prefer, you can also reach us at: <a href="#contact" onclick="copyMail()">services.synergyx@gmail.com</a><br><br>
+            
+            We look forward to hearing from you!
+          </p>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/syynergyx/" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.instagram.com/syynergyx" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/synxservices/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form id="form" action="https://api.web3forms.com/submit" method="POST">
+            <h3 class="title">Contact us</h3>
+            <input type="hidden" name="access_key" value="4dc9b650-3c9d-4de7-9d8a-0531f6b04eb1">
+            <input type="hidden" name="subject" value="SynergyX Contact">
+            <input type="hidden" name="from_name" value="SynergyX Client">
+            <div class="input-container">
+              <input type="text" name="name" class="contact-input" required />
+              <label for="">Full Name</label>
+              <span>Full Name</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="contact-input" required />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="contact-input" />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="contact-input" required></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <div class="h-captcha" data-captcha="true" data-theme="light" data-size="compact" id="captcha"></div>
+            <input type="submit" value="Send" class="btn" id="submitForm" />
+            <div id="result"></div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer Section -->
+  <footer id="EndPage">
+    <div class="container">
+      <div class="row">
+        <div class="col" id="company">
+          <img src="IMAGES/navlogo.png" alt="" class="logo">
+          <p>
+            SynergyX is a dynamic platform offering innovative digital
+            solutions. We also provide free tech courses, premium digital
+            products, and hands-on career programs to support your
+            growth and success. </p>
+          <div class="social">
+            <a href="https://www.facebook.com/syynergyx/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/syynergyx/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@synergyxacademy" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/company/synxservices/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+
+
+        <div class="col" id="services">
+          <h3>Programs</h3>
+          <div class="links">
+            <a href="https://www.youtube.com/@synergyxacademy" target="_blank">SynergyX Academy</a>
+            <a href="https://www.instagram.com/synxdigitalstore/" target="_blank">Digital Store</a>
+            <a href="https://www.linkedin.com/company/synxservices/" target="_blank">SynergyX SkillBuilder</a>
+          </div>
+        </div>
+
+        <div class="col" id="useful-links">
+          <h3>Sections</h3>
+          <div class="links">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#service">Services</a>
+            <a href="#why">Why Us</a>
+            <a href="#programs">Programs</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <div class="col" id="contact">
+          <h3>Contact</h3>
+          <div class="links">
+            <i style="font-size: 1.4rem; margin-top: 3px;" class="fa-solid fa-envelope"></i> Email
+            <a href="#EndPage" onclick="copyMail()">services.synergyx@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-row">
+        <div class="footer-form">
+          <p>Copyright © 2024 by SynergyX | All Rights Reserved</p>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+  <script src="index.min.js"></script>
+</body>
+
+</html>
