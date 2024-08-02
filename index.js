@@ -233,18 +233,18 @@ function copyMail() {
 
 let isVisible = false;
 const moreCards = document.querySelectorAll('.more');
-function showMoreServ(){
+function showMoreServ() {
     if (isVisible) {
         moreCards.forEach(card => {
-          card.style.display = 'none';
-          isVisible = false;
-          document.querySelector('#expandServ i').style.rotate = '-180deg';
+            card.style.display = 'none';
+            isVisible = false;
+            document.querySelector('#expandServ i').style.rotate = '-180deg';
         });
     } else {
         moreCards.forEach(card => {
-          card.style.display = 'flex';
-          isVisible = true;
-          document.querySelector('#expandServ i').style.rotate = '0deg';
+            card.style.display = 'flex';
+            isVisible = true;
+            document.querySelector('#expandServ i').style.rotate = '0deg';
         });
     }
 };
@@ -274,7 +274,7 @@ let CounterObserver = new IntersectionObserver(
                 }
                 else {
                     counter.innerText = targetNumber;
-                    if(targetNumber === 999999){
+                    if (targetNumber === 999999) {
                         counter.innerHTML = '<i class="fa-solid fa-infinity"></i>';
                     }
                 }
@@ -298,21 +298,21 @@ let CounterObserver = new IntersectionObserver(
 CounterObserver.observe(section_counter);
 
 
-    // Prevent right-click
-    document.addEventListener('contextmenu', function(e) {
+// Prevent right-click
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+});
+// Prevent certain key shortcuts
+document.addEventListener('keydown', function (e) {
+    // Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C, Ctrl+U, and Ctrl+S
+    if (
+        e.key === 'F12' ||
+        (e.ctrlKey && e.shiftKey && e.key === 'I') ||
+        (e.ctrlKey && e.shiftKey && e.key === 'J') ||
+        (e.ctrlKey && e.shiftKey && e.key === 'C') ||
+        (e.ctrlKey && e.key === 'U') ||
+        (e.ctrlKey && e.key === 'S')
+    ) {
         e.preventDefault();
-    });
-    // Prevent certain key shortcuts
-    document.addEventListener('keydown', function(e) {
-        // Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C, Ctrl+U, and Ctrl+S
-        if (
-            e.key === 'F12' || 
-            (e.ctrlKey && e.shiftKey && e.key === 'I') ||
-            (e.ctrlKey && e.shiftKey && e.key === 'J') ||
-            (e.ctrlKey && e.shiftKey && e.key === 'C') ||
-            (e.ctrlKey && e.key === 'U') ||
-            (e.ctrlKey && e.key === 'S')
-        ) {
-            e.preventDefault();
-        }
-    });
+    }
+});
