@@ -4,21 +4,20 @@ let gif2Played = false;
 // Load first GIF and wait until it is displayed
 let gif1 = new Image();
 gif1.src = '/IMAGES/load1.gif';
+let gif2 = new Image();
+gif2.src = '/IMAGES/load2.gif';
 gif1.onload = function () {
-    // Change to the second GIF after 1 second
-    let backgroundSize = window.matchMedia("(max-width: 820px)").matches ? "70%" : "50%";
-    document.getElementById("preloader").style.backgroundSize = backgroundSize;
-    document.getElementById("preloader").style.visibility = "visible";
-    setTimeout(function () {
-
-        // Load the second GIF and wait until it is displayed
-        document.getElementById("preloader").style.background = "url('/IMAGES/load2.gif') no-repeat center center";
-        document.getElementById("preloader").style.backgroundSize = backgroundSize;
+    gif2.onload = function () {
+        // Change to the second GIF after 1 second
+        document.getElementById("preloader").style.backgroundSize = window.matchMedia("(max-width: 820px)").matches ? "70%" : "50%";
+        document.getElementById("preloader").style.visibility = "visible";
+        setTimeout(function () {
 
 
-        let gif2 = new Image();
-        gif2.src = '/IMAGES/load2.gif';
-        gif2.onload = function () {
+
+            // Load the second GIF and wait until it is displayed
+            document.getElementById("preloader").style.background = "url('/IMAGES/load2.gif') no-repeat center center";
+            document.getElementById("preloader").style.backgroundSize = window.matchMedia("(max-width: 820px)").matches ? "70%" : "50%";
             // After another second, set gif2Played to true and check if the page is loaded
             setTimeout(function () {
                 gif2Played = true;
@@ -34,8 +33,8 @@ gif1.onload = function () {
                     }, 50);
                 }
             }, 1000);
-        };
-    }, 1000);
+        }, 1000);
+    };
 };
 
 // Event listener for page load
