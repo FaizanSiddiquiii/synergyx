@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+Disallow: https://vercel.com/faizansiddiquiiis-projects/synergyx?status=building%2Cerror%2Cinitializing%2Cqueued%2Cready
+Sitemap: https://synergyxservices.com/sitemap.xml
